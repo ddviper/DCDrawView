@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1822BDA71CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822BDA61CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.m */; };
+		1824B25A1CCE71CF00EEB2C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2591CCE71CF00EEB2C6 /* main.m */; };
+		1824B25D1CCE71CF00EEB2C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824B25C1CCE71CF00EEB2C6 /* AppDelegate.m */; };
+		1824B2601CCE71CF00EEB2C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824B25F1CCE71CF00EEB2C6 /* ViewController.m */; };
+		1824B2631CCE71CF00EEB2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1824B2611CCE71CF00EEB2C6 /* Main.storyboard */; };
+		1824B2651CCE71CF00EEB2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1824B2641CCE71CF00EEB2C6 /* Assets.xcassets */; };
+		1824B2681CCE71CF00EEB2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1824B2661CCE71CF00EEB2C6 /* LaunchScreen.storyboard */; };
+		1824B2771CCFA6C700EEB2C6 /* DCBezierPaintBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2761CCFA6C700EEB2C6 /* DCBezierPaintBoard.m */; };
+		1824B27A1CCFA6E200EEB2C6 /* DCBeizierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824B2791CCFA6E200EEB2C6 /* DCBeizierPath.m */; };
+		18F9431D1CD2642800240C0B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9431C1CD2642800240C0B /* UIView+Frame.m */; };
+		18FCB85A1CD10662008E90E4 /* DCOpenGLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCB8591CD10662008E90E4 /* DCOpenGLDrawView.m */; };
+		18FCB8651CD107D1008E90E4 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 18FCB85D1CD107D1008E90E4 /* point.fsh */; };
+		18FCB8661CD107D1008E90E4 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 18FCB85E1CD107D1008E90E4 /* point.vsh */; };
+		18FCB8671CD107D1008E90E4 /* fileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCB8621CD107D1008E90E4 /* fileUtil.m */; };
+		18FCB8681CD107D1008E90E4 /* shaderUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 18FCB8631CD107D1008E90E4 /* shaderUtil.c */; };
+		18FCB86A1CD10800008E90E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCB8691CD10800008E90E4 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1822BDA51CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUndoBeziPathPaintBoard.h; sourceTree = "<group>"; };
+		1822BDA61CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUndoBeziPathPaintBoard.m; sourceTree = "<group>"; };
+		1824B2551CCE71CF00EEB2C6 /* DCPaintBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCPaintBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1824B2591CCE71CF00EEB2C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1824B25B1CCE71CF00EEB2C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1824B25C1CCE71CF00EEB2C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1824B25E1CCE71CF00EEB2C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1824B25F1CCE71CF00EEB2C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1824B2621CCE71CF00EEB2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1824B2641CCE71CF00EEB2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1824B2671CCE71CF00EEB2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1824B2691CCE71CF00EEB2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1824B2731CCE796700EEB2C6 /* DCCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCommon.h; sourceTree = "<group>"; };
+		1824B2751CCFA6C700EEB2C6 /* DCBezierPaintBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBezierPaintBoard.h; sourceTree = "<group>"; };
+		1824B2761CCFA6C700EEB2C6 /* DCBezierPaintBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBezierPaintBoard.m; sourceTree = "<group>"; };
+		1824B2781CCFA6E200EEB2C6 /* DCBeizierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBeizierPath.h; sourceTree = "<group>"; };
+		1824B2791CCFA6E200EEB2C6 /* DCBeizierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBeizierPath.m; sourceTree = "<group>"; };
+		18F9431B1CD2642800240C0B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		18F9431C1CD2642800240C0B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		18FCB8581CD10662008E90E4 /* DCOpenGLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOpenGLDrawView.h; sourceTree = "<group>"; };
+		18FCB8591CD10662008E90E4 /* DCOpenGLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOpenGLDrawView.m; sourceTree = "<group>"; };
+		18FCB85B1CD107D1008E90E4 /* 说明.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "说明.h"; sourceTree = "<group>"; };
+		18FCB85D1CD107D1008E90E4 /* point.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+		18FCB85E1CD107D1008E90E4 /* point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		18FCB8601CD107D1008E90E4 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		18FCB8611CD107D1008E90E4 /* fileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileUtil.h; sourceTree = "<group>"; };
+		18FCB8621CD107D1008E90E4 /* fileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileUtil.m; sourceTree = "<group>"; };
+		18FCB8631CD107D1008E90E4 /* shaderUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shaderUtil.c; sourceTree = "<group>"; };
+		18FCB8641CD107D1008E90E4 /* shaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaderUtil.h; sourceTree = "<group>"; };
+		18FCB8691CD10800008E90E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1824B2521CCE71CF00EEB2C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FCB86A1CD10800008E90E4 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1822BDA41CCFBB61005BEFED /* UndoBezipath */ = {
+			isa = PBXGroup;
+			children = (
+				1822BDA51CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.h */,
+				1822BDA61CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.m */,
+			);
+			path = UndoBezipath;
+			sourceTree = "<group>";
+		};
+		1824B24C1CCE71CF00EEB2C6 = {
+			isa = PBXGroup;
+			children = (
+				18FCB8691CD10800008E90E4 /* OpenGLES.framework */,
+				1824B2571CCE71CF00EEB2C6 /* DCPaintBoard */,
+				1824B2561CCE71CF00EEB2C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1824B2561CCE71CF00EEB2C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1824B2551CCE71CF00EEB2C6 /* DCPaintBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1824B2571CCE71CF00EEB2C6 /* DCPaintBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1824B26F1CCE71EC00EEB2C6 /* PaintBoard */,
+				1824B25B1CCE71CF00EEB2C6 /* AppDelegate.h */,
+				1824B25C1CCE71CF00EEB2C6 /* AppDelegate.m */,
+				1824B25E1CCE71CF00EEB2C6 /* ViewController.h */,
+				1824B25F1CCE71CF00EEB2C6 /* ViewController.m */,
+				1824B2731CCE796700EEB2C6 /* DCCommon.h */,
+				1824B2611CCE71CF00EEB2C6 /* Main.storyboard */,
+				1824B2641CCE71CF00EEB2C6 /* Assets.xcassets */,
+				1824B2661CCE71CF00EEB2C6 /* LaunchScreen.storyboard */,
+				1824B2691CCE71CF00EEB2C6 /* Info.plist */,
+				1824B2581CCE71CF00EEB2C6 /* Supporting Files */,
+			);
+			path = DCPaintBoard;
+			sourceTree = "<group>";
+		};
+		1824B2581CCE71CF00EEB2C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1824B2591CCE71CF00EEB2C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1824B26F1CCE71EC00EEB2C6 /* PaintBoard */ = {
+			isa = PBXGroup;
+			children = (
+				18FCB8571CD1064E008E90E4 /* OpenGLPaint */,
+				1822BDA41CCFBB61005BEFED /* UndoBezipath */,
+				1824B2741CCFA6C700EEB2C6 /* BeziPathPaint */,
+			);
+			path = PaintBoard;
+			sourceTree = "<group>";
+		};
+		1824B2741CCFA6C700EEB2C6 /* BeziPathPaint */ = {
+			isa = PBXGroup;
+			children = (
+				1824B2751CCFA6C700EEB2C6 /* DCBezierPaintBoard.h */,
+				1824B2761CCFA6C700EEB2C6 /* DCBezierPaintBoard.m */,
+				1824B2781CCFA6E200EEB2C6 /* DCBeizierPath.h */,
+				1824B2791CCFA6E200EEB2C6 /* DCBeizierPath.m */,
+			);
+			path = BeziPathPaint;
+			sourceTree = "<group>";
+		};
+		18FCB8571CD1064E008E90E4 /* OpenGLPaint */ = {
+			isa = PBXGroup;
+			children = (
+				18FCB85B1CD107D1008E90E4 /* 说明.h */,
+				18F9431B1CD2642800240C0B /* UIView+Frame.h */,
+				18F9431C1CD2642800240C0B /* UIView+Frame.m */,
+				18FCB8581CD10662008E90E4 /* DCOpenGLDrawView.h */,
+				18FCB8591CD10662008E90E4 /* DCOpenGLDrawView.m */,
+				18FCB85C1CD107D1008E90E4 /* Shaders */,
+				18FCB85F1CD107D1008E90E4 /* UtilSrc */,
+			);
+			path = OpenGLPaint;
+			sourceTree = "<group>";
+		};
+		18FCB85C1CD107D1008E90E4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				18FCB85D1CD107D1008E90E4 /* point.fsh */,
+				18FCB85E1CD107D1008E90E4 /* point.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		18FCB85F1CD107D1008E90E4 /* UtilSrc */ = {
+			isa = PBXGroup;
+			children = (
+				18FCB8601CD107D1008E90E4 /* debug.h */,
+				18FCB8611CD107D1008E90E4 /* fileUtil.h */,
+				18FCB8621CD107D1008E90E4 /* fileUtil.m */,
+				18FCB8631CD107D1008E90E4 /* shaderUtil.c */,
+				18FCB8641CD107D1008E90E4 /* shaderUtil.h */,
+			);
+			path = UtilSrc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1824B2541CCE71CF00EEB2C6 /* DCPaintBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1824B26C1CCE71CF00EEB2C6 /* Build configuration list for PBXNativeTarget "DCPaintBoard" */;
+			buildPhases = (
+				1824B2511CCE71CF00EEB2C6 /* Sources */,
+				1824B2521CCE71CF00EEB2C6 /* Frameworks */,
+				1824B2531CCE71CF00EEB2C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCPaintBoard;
+			productName = DCPaintBoard;
+			productReference = 1824B2551CCE71CF00EEB2C6 /* DCPaintBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1824B24D1CCE71CF00EEB2C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Wade;
+				TargetAttributes = {
+					1824B2541CCE71CF00EEB2C6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1824B2501CCE71CF00EEB2C6 /* Build configuration list for PBXProject "DCPaintBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1824B24C1CCE71CF00EEB2C6;
+			productRefGroup = 1824B2561CCE71CF00EEB2C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1824B2541CCE71CF00EEB2C6 /* DCPaintBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1824B2531CCE71CF00EEB2C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1824B2681CCE71CF00EEB2C6 /* LaunchScreen.storyboard in Resources */,
+				1824B2651CCE71CF00EEB2C6 /* Assets.xcassets in Resources */,
+				18FCB8661CD107D1008E90E4 /* point.vsh in Resources */,
+				18FCB8651CD107D1008E90E4 /* point.fsh in Resources */,
+				1824B2631CCE71CF00EEB2C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1824B2511CCE71CF00EEB2C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1824B2601CCE71CF00EEB2C6 /* ViewController.m in Sources */,
+				1822BDA71CCFBB81005BEFED /* DCUndoBeziPathPaintBoard.m in Sources */,
+				1824B25D1CCE71CF00EEB2C6 /* AppDelegate.m in Sources */,
+				18FCB8671CD107D1008E90E4 /* fileUtil.m in Sources */,
+				1824B2771CCFA6C700EEB2C6 /* DCBezierPaintBoard.m in Sources */,
+				18FCB85A1CD10662008E90E4 /* DCOpenGLDrawView.m in Sources */,
+				1824B25A1CCE71CF00EEB2C6 /* main.m in Sources */,
+				18FCB8681CD107D1008E90E4 /* shaderUtil.c in Sources */,
+				18F9431D1CD2642800240C0B /* UIView+Frame.m in Sources */,
+				1824B27A1CCFA6E200EEB2C6 /* DCBeizierPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1824B2611CCE71CF00EEB2C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1824B2621CCE71CF00EEB2C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1824B2661CCE71CF00EEB2C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1824B2671CCE71CF00EEB2C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1824B26A1CCE71CF00EEB2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1824B26B1CCE71CF00EEB2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1824B26D1CCE71CF00EEB2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCPaintBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WD.DCPaintBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1824B26E1CCE71CF00EEB2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCPaintBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WD.DCPaintBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1824B2501CCE71CF00EEB2C6 /* Build configuration list for PBXProject "DCPaintBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1824B26A1CCE71CF00EEB2C6 /* Debug */,
+				1824B26B1CCE71CF00EEB2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1824B26C1CCE71CF00EEB2C6 /* Build configuration list for PBXNativeTarget "DCPaintBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1824B26D1CCE71CF00EEB2C6 /* Debug */,
+				1824B26E1CCE71CF00EEB2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1824B24D1CCE71CF00EEB2C6 /* Project object */;
+}
